@@ -83,7 +83,7 @@
             </form>
 
             <article>
-                <figure class="md:flex m-3 rounded-xl p-8 md:p-0 max-w-md shadow-md">
+                {{-- <figure class="md:flex m-3 rounded-xl p-8 md:p-0 max-w-md shadow-md">
                    <a href="/user/account/2">
                         <img 
                             class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" 
@@ -112,6 +112,35 @@
                         </figcaption>
                         </div>
                    </a>
+                </figure> --}}
+
+                <figure class="md:flex m-3 rounded-xl p-8 md:p-0 max-w-md shadow-md">
+                    <img 
+                        class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" 
+                        src="https://xsgames.co/randomusers/avatar.php?g=female" width="200" height="200"
+                    >
+                    
+                    <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+                      <blockquote class="border-b-2">
+                        <p class="text-sm font-medium  ">
+                          Electrical Engineer - <span class="text-xs bg-green-600 py-1 px-2 text-white">varified</span>
+                        </p>
+                      </blockquote>
+
+                      <figcaption class="font-medium text-xs">
+                        <div class="text-sky-500 dark:text-sky-400 mb-3 uppercase">
+                          Martin Kwabla Ahedor
+                        </div>
+                        <div class="text-slate-700 text-xs dark:text-slate-500">
+                          Dansoman - roundabout
+                          Availiability : 24 / 7 <br/>
+                          workdays: Monday - Friday
+                        </div>
+                        <div class="text-slate-700 text-xs dark:text-slate-500">
+                            31 - projects
+                          </div>
+                      </figcaption>
+                    </div>
                 </figure>
 
                 <figure class="md:flex m-3 rounded-xl p-8 md:p-0 max-w-md shadow-md">

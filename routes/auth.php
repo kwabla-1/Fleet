@@ -53,4 +53,7 @@ Route::middleware('auth')->group(function () {
 
     Route::post('logout', [AuthenticatedSessionController::class, 'destroy'])
                 ->name('logout');
+
+    //USER DASHBOARD UPONS COMMPLETING FIRST SIGN UP
+    // Route::get()
 });

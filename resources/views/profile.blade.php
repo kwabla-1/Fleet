@@ -21,34 +21,61 @@
     </style>
 </head>
 <body>
-    <head class="bg-green-500">
-        <a href="/" class="py-2 px-4 bg-red-400 rounded text-sm">Back To Fleet</a>
-
-    </head>
-    <div class=" bg-green-600">
-        <div class="bg-sky-500 flex content-around space-between justify-around items-center">
-           <div class="">
-            <img 
-            src="https://xsgames.co/randomusers/avatar.php?g=male" alt=""
-            class="rounded-full m-5"
-        >
-           </div>
-
-            <div class="">
-                <div class="">
-                    <h4>Martin Ahedor</h4>
-                    <span>Electrical Engineer</span>
-                </div>
-
-                <div class="">
-                    <span>Age: 45 years</span> <br />
-                    <span>Location: Dansoman - Accra</span> <br />
-                    <span>Email: Something@gmail.com</span> <br />
-                </div>
-
-
-            </div>
-        </div>
+    <div class="fixed top-5 left-5 rounded-full bg-white shadow-md flex justify-center items-center align-middle" style="width: 50px; height: 50px">
+        <a href="/"><ion-icon name="arrow-back-outline"></ion-icon></a>
     </div>
+    <header class="bg-green-500">
+        <div class="max-w-[100rem] mx-auto  ">
+            <div class=" flex  items-start">
+               <div class="basis-1/4">
+                    <img 
+                    src="https://xsgames.co/randomusers/avatar.php?g=male" alt=""
+                    class="rounded-md m-5">
+    
+               </div>
+    
+                <div class="m-10 flex justify-between">
+                    <div class="">
+                        <div class="">
+                            <h1 class="uppercase">Martin Ahedor</h1>
+                            <span>Electrical Engineer</span>
+                        </div>
+        
+                        <div class="">
+                            <span>Age: 45 years</span> <br />
+                            <span>Location: Dansoman - Accra</span> <br />
+                            <span>Email: Something@gmail.com</span> <br />
+                        </div>
+        
+        
+                    </div>
+        
+                    {{-- SOCIAL MEDIA HANDLES --}}
+                    <div class="">
+                        <span>facebook</span>
+                        <span>twitter</span>
+                        <span>Instagram</span>
+        
+                        <p>
+                            <a href="#">send a message</a>
+                        </p>
+                    </div>
+    
+                    
+                </div>
+            </div>
+           
+        </div>
+    </header>
+
+    <article>
+        <section class="bg-gray-200 max-w-[100rem] mx-auto">
+            <h1>Body content</h1>
+        </section>
+    </article>
+
+    {{-- ION ICONS IMPORTSS --}}
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
