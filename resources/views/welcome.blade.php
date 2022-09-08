@@ -171,6 +171,10 @@
                       </figcaption>
                     </div>
                 </figure>
+
+                @php
+                    var_dump(Auth::user()->id);
+                @endphp
             </article>
         </main>
     </body>
