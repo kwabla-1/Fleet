@@ -21,8 +21,16 @@ Route::get('user/account/{id}', function ($id) {
     return view('profile')->with(['users' => 'martin']);
 });
 
+Route::get('/individual/profile',function (){
+    return view('auth.individual-profile');
+})->name('userprofile');
+
+Route::get('/company/profile',function (){
+    return view('auth.company-profile');
+})->name('companyprofile');
+
 Route::get('/dashboard', function () {
     return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+})->middleware(['auth','completeprofile'])->name('dashboard');
 
 require __DIR__.'/auth.php';

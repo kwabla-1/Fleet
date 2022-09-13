@@ -45,6 +45,15 @@
                                 name="password_confirmation" required />
             </div>
 
+            <div class="mt-4">
+                <x-label for='confirm_usertype' :value="__('Company or Individual ?')"/>
+                <select name="user_type" id="user_type" required
+                    class="rounded-md shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 block mt-1 w-full">
+                    <option value="individual">Individual</option>
+                    <option value="company">Company</option>
+                </select>
+            </div>
+
             <div class="flex items-center justify-end mt-4">
                 <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
                     {{ __('Already registered?') }}
