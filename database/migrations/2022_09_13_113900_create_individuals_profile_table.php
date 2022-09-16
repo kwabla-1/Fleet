@@ -18,8 +18,8 @@ return new class extends Migration
             $table->string('fullname');
             $table->string('mobile_number');
             $table->date('date_of_birth');
-            $table->date('profile_picture')->nullable();
-            $table->date('about_me')->nullable();
+            $table->text('profile_picture')->nullable();
+            $table->text('about_me')->nullable();
             
             $table->string('country');
             $table->string('location');
@@ -27,12 +27,12 @@ return new class extends Migration
             $table->string('city');
 
             $table->string('school_name')->nullable();
-            $table->string('completion_year')->nullable();
+            $table->date('completion_year')->nullable();
             $table->string('professsion');
             
 
             $table->string('certificates')->nullable();
-            $table->string('carrer_commence');
+            $table->date('carrer_commence');
             $table->string('experince_level');
 
             $table->text('fleet_id');

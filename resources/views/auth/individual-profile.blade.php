@@ -6,7 +6,21 @@
                 <h6 class="text-blueGray-700 text-xl font-bold text-center">
                   Profile completion page - individual
                 </h6>
-                
+
+                @if ($errors->any())
+                    <div>
+                        <div class="font-medium text-red-600">
+                           <span>Opps something went wrong</span>
+                        </div>
+
+                        <ul class="mt-3 list-disc list-inside text-sm text-red-600">
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+                                
               </div>
             </div>
             <div class="flex-auto px-4 lg:px-10 py-10 pt-0">
@@ -71,6 +85,21 @@
                         type="text" 
                         name="lastname"
                         value="{{$firstAndLastName[1]}}"
+                        required
+                        class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150">
+                    </div>
+                  </div>
+
+                  <div class="w-full lg:w-6/12 px-4">
+                    <div class="relative w-full mb-3">
+                      <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlfor="grid-password">
+                        Mobile number
+                      </label>
+                      <input 
+                        type="text" 
+                        name="mobile_number"
+                        value=""
+                        placeholder="+233-054-218-6981"
                         required
                         class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150">
                     </div>

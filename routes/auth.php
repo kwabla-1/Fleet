@@ -57,7 +57,8 @@ Route::middleware('auth')->group(function () {
                 ->name('logout');
 
     //complete profile infomation for individual
-    Route::post('/individual/profile/completion', [IndividualProfileCompletionController::class,'__invoke'])->name('profilecomplete');
+    Route::post('/individual/profile/completion', [IndividualProfileCompletionController::class,'__invoke'])
+    ->name('profilecomplete');
    
 });
 
