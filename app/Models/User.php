@@ -54,4 +54,13 @@ class User extends Authenticatable
     {
         return $this->hasOne(individualProfile::class);
     }
+
+    public function user_profile($profile_type)
+    {
+        if ($profile_type == 'individual_profile') {
+            return $this->hasOne(individualProfile::class);
+        }elseif ($profile_type == "company_profile") {
+            return $this->hasOne(CompanyProfile::class);
+        }
+    }
 }

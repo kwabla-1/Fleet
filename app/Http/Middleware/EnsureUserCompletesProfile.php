@@ -37,3 +37,7 @@ class EnsureUserCompletesProfile
         return $next($request);
     }
 }
+
+// if user does not have a profile 
+// navigate to profile page
+// if user has completed their profile page dont view the complete profile page
